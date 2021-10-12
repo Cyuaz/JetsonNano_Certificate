@@ -16,26 +16,26 @@ Basic knowledge regarding Jetson and Linux and docker environment from Hello AI 
 You can set up the jetson-inference following this tutorial https://github.com/dusty-nv/jetson-inference
 
 2. Get to the right directory\
-$ cd ~/jetson-inference/python/training/detection/ssd
+$ cd ~/jetson-inference/python/training/classification/
 
 3. Install this application and the dependent modules\
-$ git clone https://github.com/Zhan925/Mask_detection
+$ git clone https://github.com/Cyuaz/JetsonNano_Certificate
 
-4. Set the environment variable\
-$ export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
+4.Merge the files you just cloned from github to the classification folder
 
 ## Usage
 1. Go to the jetson-inference\
 $ cd ~/jetson-inference
 
 2. Run the docker\
-$  docker/run.sh --volume ~/jetson-inference/python/training/detection/ssd/Mask_detection:/jetson-inference/python/training/detection/ssd
+$  docker/run.sh --volume ~/jetson-inference/python/training/classification:/jetson-inference/python/training/classification
 
 3. Go to the directory\
-$ cd /jetson-inference/python/training/detection/ssd/Mask_detection
+$ cd /jetson-inference/python/training/classification
 
 4. Run the program\
-$  python3 my-detection.py\
-Note: it takes time for the first-run, so just be patient.
+$  python3 mask_recognition.py
+
+Note: The first time to run anything camera related is gonna take about 5 minutes to initialize. Don't kill the program just because you think it is acting weird.
 
 
