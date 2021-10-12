@@ -34,7 +34,7 @@ $  docker/run.sh --volume ~/jetson-inference/python/training/classification:/jet
 $ cd /jetson-inference/python/training/classification
 
 4. Run the program\
-$  python3 mask_recognition.py
+$  python3 mask_recognition.py --model=models/mask/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=data/mask/labels.txt /dev/video0
 
 Note: The first time to run anything camera related is gonna take about 5 minutes to initialize. Don't kill the program just because you think it is acting weird.
 
