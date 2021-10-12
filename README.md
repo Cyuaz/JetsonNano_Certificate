@@ -23,7 +23,7 @@ $ git clone https://github.com/Cyuaz/JetsonNano_Certificate
 
 4.Merge the files you just cloned from github to the classification folder
 
-## Usage
+## How To Use
 1. Go to the jetson-inference\
 $ cd ~/jetson-inference
 
